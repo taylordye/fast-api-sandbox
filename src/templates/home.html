@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+    <h2>Hello, from the home page</h2>
+    <h3>Please input your email below</h3>
+
+    <form action="" method="post">
+        <input type="email" name="email" id="" required placeholder="Your email...">
+        <input type="submit" value="Join Waitlist" class="btn btn-success">
+    </form>
+
+    <br>
+    {% if submitted_email %}
+        <p>Submitted Email: {{submitted_email}}</p>
+    {% endif %}
+{% endblock content %}
