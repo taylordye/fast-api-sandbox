@@ -3,8 +3,7 @@ import os
 from fastapi import FastAPI, Request, Form
 from fastapi.templating import Jinja2Templates
 import pathlib
-from .airtable import push_to_airtable
-
+from airtable import push_to_airtable
 
 # Set base dir
 BASE_DIR = pathlib.Path(__file__).parent
