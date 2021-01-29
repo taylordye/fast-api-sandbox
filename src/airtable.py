@@ -28,7 +28,5 @@ def push_to_airtable(email=None, api_key=None, base_id=None, table_name=None):
         }
 
         r = requests.post(endpoint, headers=headers, json=data)
-        
-        print(endpoint, r.json())
 
         return r.status_code == 200
