@@ -12,7 +12,14 @@
     </form>
 
     <br>
+
     {% if submitted_email %}
         <p>Submitted Email: {{submitted_email}}</p>
+        <p>Email successfully sent</p>
     {% endif %}
+
+    {% if did_send %}
+        <p>Email successfully sent: {{ did_send }}</p>
+    {% endif %}
+
 {% endblock content %}
