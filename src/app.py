@@ -8,7 +8,7 @@ from .airtable import push_to_airtable
 # Set base dir
 BASE_DIR = pathlib.Path(__file__).parent
 
-# Create your a pp
+# Create your app
 app = FastAPI()
 
 # Establish templates

@@ -3,23 +3,45 @@
 
 {% block content %}
 
-    <h2>Hello, from the home page</h2>
-    <h3>Please input your email below</h3>
+    <section class="ml-4 mr-4">
+        <div class="hero-body has-text-centered">
+            <p class="is-size-1 has-text-weight-bold">FightStats👊🏼</p>
+            <p class="subtitle has-text-weight-semibold has-text-primary is-size-3"> <span class="has-background-primary-light">Unlock a database with extensive data on 1,000+ mixed-martial artists</span></p>
+        </div>
+    </section>
 
-    <form action="" method="post">
-        <input type="email" name="email" id="" required placeholder="Your email...">
-        <input type="submit" value="Join Waitlist" class="btn btn-success">
-    </form>
+    <div class="columns">
+        <div class="column">
+            <section class="ml-4 mr-4 has-text-centered">
+                <p class="title has-text-weight-bold has-text-primary mt-6">Free Sample 👀</p>
+                <iframe class="airtable-embed" src="https://airtable.com/embed/shrt7jxbK63jNlPsc?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="75%" height="433" style="background: transparent; border: 1px solid #ccc;"></iframe>
+            </section>
+        </div>
+    </div>
 
-    <br>
+    <div class="columns">
+        <div class="column">
+            <section class="ml-4 mr-4">
+                <div class="hero-body has-text-centered">
+                    <p class="title has-text-weight-bold">Lifetime access just <span class="has-text-weight-semibold is-italic has-background-primary-light">$29</span></p>
+                    <p class="subtitle is-size-4 has-text-weight-semibold mt-4">Weekly updates 📆</p>
+                    <p class="subtitle is-size-4 has-text-weight-semibold">Lifetime price locked in 🔒</p>
+                    <p class="subtitle is-size-4 has-text-weight-semibold">Downloadable CSV/Excel file format (only on desktop 💻)</p>
+                    <button class="button is-primary is-medium">Get Access</button>
+                </div>
+            </section>
+        </div>
+    </div>
 
-    {% if submitted_email %}
-        <p>Submitted Email: {{submitted_email}}</p>
-        <p>Email successfully sent</p>
-    {% endif %}
-
-    {% if did_send %}
-        <p>Email successfully sent: {{ did_send }}</p>
-    {% endif %}
+    <footer class="footer mb-2 is-rounded">
+        <div class="content has-text-centered">
+            <p>
+            We take care to ensure the accuracy and timeliness of our data. However on occasion, errors may be present in the data. We will not be held liable for losses resulting from actions made on the data provided.
+            </p>
+            <p>
+            We are not affiliated in any way with any mixed-martial arts orginazation such as the UFC or Bellator.
+            </p>
+        </div>
+    </footer>
 
 {% endblock content %}
